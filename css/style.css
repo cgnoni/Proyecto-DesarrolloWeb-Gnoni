@@ -29,6 +29,7 @@ ul,
 ol {
   list-style: none;
 }
+/* Fin Estilos reset o Generales */
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -111,7 +112,28 @@ ol {
   font-weight: 400;
   text-align: justify;
 }
-/* Fin Estilos reset o Generales */
+.news {
+  background-color: #35bdd490;
+  padding: 15px 5px 15px 20px;
+}
+.news_title {
+  font-family: "Cabin";
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.news_header {
+  color: darkslateblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  padding: 10px 0px;
+}
+.img_news {
+  width: 95%;
+}
 @media (min-width: 992px) {
   .main_title {
     color: blue;
@@ -218,12 +240,9 @@ ol {
   /* Fin Estilos Nosotros */
   /* Inicio Estilos Noticias */
   .news {
-    background-color: #35bdd490;
-  }
-  .news_wrapper {
     display: grid;
     grid-template-areas:
-      "title-1 title-1"
+      "title2 title2"
       "news1 news2"
       "news3 news4"
       "news5 news6";
@@ -232,20 +251,12 @@ ol {
     gap: 25px;
     padding: 30px 40px;
   }
-  .news_wrapper-title {
-    grid-area: title-1;
-    font-family: "Cabin";
+  .news_title {
+    grid-area: title2;
     font-size: 48px;
-    font-weight: 600;
-    text-align: center;
   }
-.news_header {
-  color: darkslateblue;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
+  .news_header {
+    padding: 0px;
   }
   .img_news {
     width: 100vh;
@@ -288,7 +299,7 @@ ol {
     justify-content: start;
     gap: 0 30px;
   }
-  .image_footer {
+  .img_footer {
     display: inline;
     position: relative;
   }
