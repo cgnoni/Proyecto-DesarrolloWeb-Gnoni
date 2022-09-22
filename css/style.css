@@ -35,7 +35,7 @@ ol {
   bottom: 20px;
   right: 20px;
 }
-.main_header {
+.main_header, .main_footer {
   background-color: blueviolet;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -47,7 +47,7 @@ ol {
   justify-content: center;
   align-items: center;
 }
-.main_header_nav {
+.main_header_nav, .main_footer_nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -92,17 +92,13 @@ ol {
   background-color: #3297a890;
   padding: 20px 15px;
 }
-.us_title {
+.us_title, .news_title {
   font-family: "Cabin";
   font-size: 30px;
   font-weight: 600;
   text-align: center;
 }
-.img1 img {
-  width: 95%;
-  padding: 10px 0px;
-}
-.img2 img {
+.img1 img, .img2 img, .img_news {
   width: 95%;
   padding: 10px 0px;
 }
@@ -116,12 +112,6 @@ ol {
   background-color: #35bdd490;
   padding: 15px 5px 15px 20px;
 }
-.news_title {
-  font-family: "Cabin";
-  font-size: 30px;
-  font-weight: 600;
-  text-align: center;
-}
 .news_header {
   color: darkslateblue;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -130,26 +120,6 @@ ol {
   font-style: italic;
   text-align: center;
   padding: 10px 0px;
-}
-.img_news {
-  width: 95%;
-}
-.main_footer {
-  background-color: blueviolet;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.main_footer_nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 10px 10px;
 }
 @media (min-width: 992px) {
   .main_title {
