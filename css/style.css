@@ -47,17 +47,15 @@ ol {
   justify-content: center;
   align-items: center;
 }
-.main_header_nav, .main_footer_nav {
+.main_footer_nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 10px 10px;
 }
-.main_header li {
-  padding-left: 20px;
-}
-.main_header_nav a.active {
-  color: blueviolet;
+.nav_color {
+  background-color: blueviolet;
+  color: white;
 }
 .main_principal {
   background-color: #000000;
@@ -149,27 +147,6 @@ ol {
     grid-template-columns: repeat(5, 1fr);
     justify-content: end;
     gap: 0 35px;
-  }
-  .main_header ul ul {
-    display: none;
-    position: absolute;
-    background-color: #8a2be280;
-    width: 80px;
-    padding-left: 15px;
-    padding-bottom: 10px;
-    bottom: -20px;
-  }
-  .main_header ul ul li {
-    display: block;
-  }
-  .main_header ul li:hover ul {
-    display: block;
-  }
-  .main_header_nav-button {
-    border: 1px solid white;
-    border-radius: 41px;
-    padding: 10px 15px;
-    margin-left: 20px;
   }
   /* Fin Estilos Barra de Navegación */
   /* Inicio Estilos Página Principal */
