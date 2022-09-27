@@ -35,7 +35,17 @@ ol {
   bottom: 20px;
   right: 20px;
 }
-.main_header, .main_footer {
+.nav_style {
+  background-color: blueviolet;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.dropdown-menu {
+  background-color: blueviolet;
+}
+.main_footer {
   background-color: blueviolet;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -52,9 +62,6 @@ ol {
   justify-content: center;
   flex-wrap: wrap;
   padding: 10px 10px;
-}
-.nav_color {
-  background-color: blueviolet;
 }
 .main_principal {
   background-color: #000000;
@@ -131,23 +138,6 @@ ol {
     bottom: 40px;
     right: 40px;
   }
-  /* Inicio Estilos Barra de Navegación */
-  .main_header {
-    position: fixed;
-    width: 100vw;
-    height: 60px;
-    display: grid;
-    grid-template-columns: 450px auto;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .main_header_nav {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: end;
-    gap: 0 35px;
-  }
-  /* Fin Estilos Barra de Navegación */
   /* Inicio Estilos Página Principal */
   .main_principal {
     height: 100vh;
