@@ -37,7 +37,7 @@ ol {
   right: 20px;
 }
 .nav_style {
-  background-color: blueviolet;
+  background: linear-gradient(180deg, rgba(131,58,180,1) 28%, rgba(66,29,253,1) 83%, rgba(0,0,0,1) 100%);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
   "Lucida Sans", Arial, sans-serif;
   font-size: 1rem;
@@ -45,24 +45,6 @@ ol {
 }
 .dropdown-menu {
   background-color: blueviolet;
-}
-.main_footer {
-  background-color: blueviolet;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.main_footer_nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 10px 10px;
 }
 .main_principal {
   background-color: #000000;
@@ -103,7 +85,7 @@ ol {
   font-weight: 600;
   text-align: center;
 }
-.img1 img, .img2 img, .img_news {
+.img1 img, .img2 img {
   width: 95%;
   padding: 10px 0px;
 }
@@ -125,6 +107,27 @@ ol {
   font-style: italic;
   text-align: center;
   padding: 10px 0px;
+}
+.img_news {
+  width: 95%;
+}
+.main_footer {
+  background: linear-gradient(0deg, rgba(131,58,180,1) 24%, rgba(66,29,253,1) 81%, #35bdd490 98%);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_footer_nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 25px 10px;
 }
 /* Fin Estilos mobile first */
 @media (min-width: 992px) {
@@ -149,6 +152,7 @@ ol {
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-content: space-between;
+    margin-top: -110px;
   }
   .main_principal_wrapper {
     overflow: hidden;
@@ -206,12 +210,17 @@ ol {
     gap: 25px;
     padding: 30px 40px;
   }
+  .news div:hover {
+    transform: scale(1.1);
+    background-color: aquamarine;
+    border-radius: 30px;
+  }
   .news_title {
     grid-area: title2;
     font-size: 48px;
   }
   .news_header {
-    padding: 0px;
+    padding: 10px;
   }
   .img_news {
     width: 100vh;
