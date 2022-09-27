@@ -30,6 +30,7 @@ ol {
   list-style: none;
 }
 /* Fin Estilos reset o Generales */
+/* Inicio Estilos mobile first */
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -125,6 +126,7 @@ ol {
   text-align: center;
   padding: 10px 0px;
 }
+/* Fin Estilos mobile first */
 @media (min-width: 992px) {
   .main_title {
     color: blue;
