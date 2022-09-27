@@ -138,6 +138,7 @@ ol {
     font-size: medium;
     text-align: center;
     line-height: 1.5;
+    grid-area: title2;
   }
   .whatsapp {
     bottom: 40px;
@@ -263,7 +264,21 @@ ol {
     position: relative;
   }
   /* Fin Estilos Pie de Página */
-
+  /* Inicio Estilos Página Contactos */
+  .main_contacts {
+    background-color: #000000;
+    color: aquamarine;
+  }
+  .contacts_form {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    grid-area: form;
+  }
+  .contacts_paragraph {
+    grid-area: paragraph2;
+  }
+    /* Fin Estilos Página Contactos */
   .main_table {
     border: double 5px blue;
   }
