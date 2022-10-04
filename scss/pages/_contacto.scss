@@ -1,0 +1,46 @@
+.main_contacts {
+  background-color: #000000;
+  color: aquamarine;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+}
+.contacts_form {
+  padding: 20px;
+}
+.contacts_paragraph {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+@media (min-width: 992px) {
+  /* Inicio Estilos Página Contactos */
+  .main_contacts {
+    display: grid;
+    grid-template-areas:
+      "title3 title3"
+      "form1 paragraph2";
+    grid-template-rows: 0fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    padding: 20px 10px;
+  }
+  .contacts_form {
+    grid-area: form1;
+    justify-self: center;
+    padding: 0;
+  }
+  .contacts_paragraph {
+    grid-area: paragraph2;
+    align-self: stretch;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  .label_style {
+    padding-right: 10px;
+  }
+  /* Fin Estilos Página Contactos */
+}
