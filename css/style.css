@@ -8387,7 +8387,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-/* Inicio Estilos Generales */
 @font-face {
   font-family: "HarryPotter";
   src: url("fonts/HarryPotter.TTF") format("truetype");
@@ -8416,7 +8415,15 @@ ul,
 ol {
   list-style: none; }
 
-/* Fin Estilos reset o Generales */
+.main_title {
+  color: blue;
+  font-family: "AbrilFatface";
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 30px; }
+
 /* Inicio Estilos mobile first */
 .whatsapp {
   position: fixed;
@@ -8516,14 +8523,6 @@ ol {
   flex-wrap: wrap;
   padding: 25px 10px; }
 
-.main_title {
-  color: blue;
-  font-family: "AbrilFatface";
-  font-weight: bold;
-  font-size: medium;
-  text-align: center;
-  line-height: 1.5; }
-
 /* Fin Estilos mobile first */
 @media (min-width: 992px) {
   .main_title {
@@ -8621,11 +8620,46 @@ ol {
     position: relative; }
   /* Fin Estilos Pie de Página */ }
 
-.main_table {
-  border: double 5px blue; }
+.main_events {
+  background-color: black;
+  width: 100%;
+  padding: 30px; }
 
-.main_table th {
-  border: double 2px blue; }
+.main_table {
+  color: white;
+  border-collapse: collapse;
+  border: double 5px #9900ff;
+  font-family: "Monserrat", sans-serif;
+  font-size: 25px;
+  text-align: justify;
+  margin: 0 auto; }
+  .main_table th, .main_table td {
+    border: double 2px #9900ff;
+    padding: 20px;
+    text-align: center; }
+  .main_table th {
+    font-family: "HarryPotter";
+    font-size: 50px; }
+  @media (max-width: 480px) {
+    .main_table {
+      width: 100%;
+      border: none; }
+      .main_table .table_header {
+        display: none; }
+      .main_table tr {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #9900ff;
+        margin-bottom: 20px;
+        padding: 20px; }
+      .main_table td {
+        font-size: 20px;
+        border: none; }
+        .main_table td[data-titulo] {
+          display: flex; }
+          .main_table td[data-titulo]::before {
+            content: attr(data-titulo);
+            width: 130px; } }
 
 .main_contacts {
   background-color: #000000;

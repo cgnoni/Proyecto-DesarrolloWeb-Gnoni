@@ -13,8 +13,8 @@
     <header class="container-fluid nav_style">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"">
-            <img src="./img/logo.png" alt="LogoWizard" width="50" height="60">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./img/logo.png" alt="LogoWizard" width="50" height="60" />
           </a>
           <button
             class="navbar-toggler"
@@ -30,7 +30,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item pe-4">
-                <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item dropdown pe-4">
                 <a
@@ -43,17 +48,23 @@
                   Quienes Somos
                 </a>
                 <ul class="dropdown-menu">
-                  <li class="nav_style"><a class="dropdown-item" href="./historia.html">Historia</a></li>
+                  <li class="nav_style">
+                    <a class="dropdown-item" href="./historia.html">Historia</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item pe-4">
                 <a class="nav-link text-white" href="./eventos.html">Eventos</a>
               </li>
               <li class="nav-item pe-4">
-                <a class="nav-link text-white" href="./portfolio.html">Portfolio</a>
+                <a class="nav-link text-white" href="./portfolio.html"
+                  >Portfolio</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="./contacto.html">Contacto</a>
+                <a class="nav-link text-white" href="./contacto.html"
+                  >Contacto</a
+                >
               </li>
             </ul>
           </div>
@@ -73,38 +84,43 @@
       <div class="main_title">
         <h1>Proximos Eventos</h1>
       </div>
-      <fieldset>
-        <table class="main_table">
-          <tr>
-            <th>Actividad</th>
-            <th>Día</th>
-            <th>Horario</th>
-            <th>Lugar</th>
-            <th>Como llegar</th>
-          </tr>
-          <tr>
-            <td>Trivia Mágica</td>
-            <td>03 de Septiembre</td>
-            <td>14 a 17 hs</td>
-            <td>Teatro Payro</td>
-            <td>Mapa</td>
-          </tr>
-          <tr>
-            <td>Día de la Juventud</td>
-            <td>18 de Septiembre</td>
-            <td>A confirmar</td>
-            <td>Villa Victoria</td>
-            <td>Mapa</td>
-          </tr>
-          <tr>
-            <td>PoterWalk 2022</td>
-            <td>25 de Septiembre</td>
-            <td>13:30 a 19 hs</td>
-            <td>Plaza Mitre</td>
-            <td>Mapa</td>
-          </tr>
-        </table>
-      </fieldset>
+      <table class="main_table">
+        <tr class="table_header">
+          <th>Actividad</th>
+          <th>Día</th>
+          <th>Horario</th>
+          <th>Lugar</th>
+          <th>Como llegar</th>
+        </tr>
+        <tr>
+          <td data-titulo="Actividad:">Trivia Mágica</td>
+          <td data-titulo="Día:">03 de Septiembre</td>
+          <td data-titulo="Horario:">14 a 17 hs</td>
+          <td data-titulo="Lugar:">Teatro Payro</td>
+          <td data-titulo="Cómo llegar:">Mapa</td>
+        </tr>
+        <tr>
+          <td data-titulo="Actividad:">Festival Flama</td>
+          <td data-titulo="Día:">18 de Septiembre</td>
+          <td data-titulo="Horario:">14 a 19 hs</td>
+          <td data-titulo="Lugar:">Villa Victoria</td>
+          <td data-titulo="Cómo llegar:">Mapa</td>
+        </tr>
+        <tr>
+          <td data-titulo="Actividad:">PoterWalk 2022</td>
+          <td data-titulo="Día:">25 de Septiembre</td>
+          <td data-titulo="Horario:">13:30 a 19 hs</td>
+          <td data-titulo="Lugar:">Plaza Mitre</td>
+          <td data-titulo="Cómo llegar:">Mapa</td>
+        </tr>
+        <tr>
+          <td data-titulo="Actividad:">Wizard Tercer Año</td>
+          <td data-titulo="Día:">21 de Noviembre</td>
+          <td data-titulo="Horario:">13 a 19:30 hs</td>
+          <td data-titulo="Lugar:">Escuela Piloto</td>
+          <td data-titulo="Cómo llegar:">Mapa</td>
+        </tr>
+      </table>
     </main>
     <!-- Fin Página Principal de Historia -->
     <!-- Inicio Pie de Pagina -->

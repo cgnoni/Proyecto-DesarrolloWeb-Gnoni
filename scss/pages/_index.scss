@@ -1,33 +1,3 @@
-/* Inicio Estilos Generales */
-@font-face {
-  font-family: "HarryPotter";
-  src: url("fonts/HarryPotter.TTF") format("truetype");
-  font-size: medium;
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Cabin";
-  src: url("fonts/Cabin.ttf") format("truetype");
-  font-size: medium;
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("fonts/Montserrat.ttf") format("truetype");
-  font-size: medium;
-  font-weight: bold;
-}
-@font-face {
-  font-family: "AbrilFatface";
-  src: url("fonts/AbrilFatface.ttf") format("truetype");
-  font-size: medium;
-  font-weight: bold;
-}
-ul,
-ol {
-  list-style: none;
-}
-/* Fin Estilos reset o Generales */
 /* Inicio Estilos mobile first */
 .whatsapp {
   position: fixed;
@@ -138,14 +108,6 @@ ol {
   justify-content: center;
   flex-wrap: wrap;
   padding: 25px 10px;
-}
-.main_title {
-  color: blue;
-  font-family: "AbrilFatface";
-  font-weight: bold;
-  font-size: medium;
-  text-align: center;
-  line-height: 1.5;
 }
 /* Fin Estilos mobile first */
 @media (min-width: 992px) {

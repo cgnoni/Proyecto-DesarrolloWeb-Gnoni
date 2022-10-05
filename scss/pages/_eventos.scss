@@ -1,6 +1,48 @@
-.main_table {
-  border: double 5px blue;
+.main_events {
+  background-color: black;
+  width: 100%;
+  padding: 30px;
 }
-.main_table th {
-  border: double 2px blue;
+.main_table {
+  color: white;
+  border-collapse: collapse;
+  border: double 5px rgb(153, 0, 255);
+  font-family: "Monserrat", sans-serif;
+  font-size: 25px;
+  text-align: justify;
+  margin: 0 auto;
+  th, td {
+    border: double 2px rgb(153, 0, 255);
+    padding: 20px;
+    text-align: center;
+  }
+  th {
+    font-family: "HarryPotter";
+    font-size: 50px;
+  }
+  @media (max-width: 480px){
+    width: 100%;
+    border: none;
+    .table_header {
+      display: none;
+    }
+    tr {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgb(153, 0, 255);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    td {
+      font-size: 20px;
+      border: none;
+      &[data-titulo] {
+        display: flex;
+        &::before {
+          content: attr(data-titulo);
+          width: 130px;
+        }
+      }
+    }
+  }
 }
