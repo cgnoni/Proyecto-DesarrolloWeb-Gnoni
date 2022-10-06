@@ -1,23 +1,11 @@
-/* Inicio Estilos mobile first */
 .whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
-}
-.nav_style {
-  background: linear-gradient(
-    180deg,
-    rgba(131, 58, 180, 1) 28%,
-    rgba(66, 29, 253, 1) 83%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-}
-.dropdown-menu {
-  background-color: blueviolet;
+  @media (min-width: 992px) {
+    bottom: 40px;
+    right: 40px;
+  }
 }
 .main_principal {
   background-color: #000000;
@@ -26,15 +14,31 @@
   justify-content: center;
   align-items: center;
   height: 60vh;
+  @media (min-width: 992px) {
+    height: 100vh;
+  }
 }
 .main_principal_container {
   padding: 0 15px;
+  @media (min-width: 992px) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    margin-top: -110px;
+  }
 }
 .main_principal_wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 30px;
+  @media (min-width: 992px) {
+    overflow: hidden;
+    margin-top: 40px;
+    margin-right: 20px;
+    text-align: center;
+  }
 }
 .main_principal_wrapper-title {
   font-family: "HarryPotter";
@@ -43,108 +47,24 @@
   font-weight: 700;
   text-align: center;
   line-height: 1.5;
+  @media (min-width: 992px) {
+    font-size: 110px;
+  }
 }
-.main_principal_img img {
-  width: 100%;
-  height: auto;
+.main_principal_img {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  @media (min-width: 992px) {
+    margin-top: 100px;
+    justify-self: center;
+  }
 }
 .us {
   background-color: #3297a890;
   padding: 20px 15px;
-}
-.us_title,
-.news_title {
-  font-family: "Cabin";
-  font-size: 30px;
-  font-weight: 600;
-  text-align: center;
-}
-.img1 img,
-.img2 img {
-  width: 95%;
-  padding: 10px 0px;
-}
-.us_paragraph {
-  font-family: "Montserrat";
-  font-size: 20px;
-  font-weight: 400;
-  text-align: justify;
-}
-.news {
-  background-color: #35bdd490;
-  padding: 15px 5px 15px 20px;
-}
-.news_header {
-  color: darkslateblue;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-  padding: 10px 0px;
-}
-.img_news {
-  width: 95%;
-}
-.main_footer {
-  background: linear-gradient(
-    0deg,
-    rgba(131, 58, 180, 1) 24%,
-    rgba(66, 29, 253, 1) 81%,
-    #35bdd490 98%
-  );
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.main_footer_nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 25px 10px;
-}
-/* Fin Estilos mobile first */
-@media (min-width: 992px) {
-  .main_title {
-    grid-area: title3;
-  }
-  .whatsapp {
-    bottom: 40px;
-    right: 40px;
-  }
-  /* Inicio Estilos Página Principal */
-  .main_principal {
-    height: 100vh;
-  }
-  .main_principal_container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-content: space-between;
-    margin-top: -110px;
-  }
-  .main_principal_wrapper {
-    overflow: hidden;
-    margin-top: 40px;
-    margin-right: 20px;
-    text-align: center;
-  }
-  .main_principal_wrapper-title {
-    font-size: 110px;
-  }
-  .main_principal_img {
-    margin-top: 100px;
-    justify-self: center;
-  }
-  /* Fin Estilos Página Principal */
-  /* Inicio Estilos Nosotros */
-  .us {
+  @media (min-width: 992px) {
     display: grid;
     grid-template-areas:
       "title1 title1"
@@ -155,25 +75,58 @@
     gap: 25px;
     padding: 30px 40px;
   }
-  .us_title {
+}
+.us_title {
+  font-family: "Cabin";
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  @media (min-width: 992px) {
     grid-area: title1;
     font-size: 48px;
   }
-  .img1 {
+}
+.news_title {
+  @extend .us_title;
+  @media (min-width: 992px) {
+    grid-area: title2;
+    font-size: 48px;
+  }
+}
+.img1 {
+  img {
+    width: 95%;
+    padding: 10px 0px;
+  }
+  @media (min-width: 992px) {
     grid-area: img1;
     justify-self: center;
   }
-  .img2 {
+}
+.img2 {
+  img {
+    width: 95%;
+    padding: 10px 0px;
+  }
+  @media (min-width: 992px) {
     grid-area: img2;
     justify-self: center;
   }
-  .us_paragraph {
+}
+.us_paragraph {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+  @media (min-width: 992px) {
     grid-area: paragraph;
     font-size: 30px;
   }
-  /* Fin Estilos Nosotros */
-  /* Inicio Estilos Noticias */
-  .news {
+}
+.news {
+  background-color: #35bdd490;
+  padding: 15px 5px 15px 20px;
+  @media (min-width: 992px) {
     display: grid;
     grid-template-areas:
       "title2 title2"
@@ -184,58 +137,46 @@
     grid-template-columns: 1fr 1fr;
     gap: 25px;
     padding: 30px 40px;
+    div:hover {
+      transform: scale(1.1);
+      background-color: aquamarine;
+      border-radius: 30px;
+    }
+    &__1 {
+      grid-area: news1;
+    }
+    &__2 {
+      grid-area: news2;
+    }
+    &__3 {
+      grid-area: news3;
+    }
+    &__4 {
+      grid-area: news4;
+    }
+    &__5 {
+      grid-area: news5;
+    }
+    &__6 {
+      grid-area: news6;
+    }
   }
-  .news div:hover {
-    transform: scale(1.1);
-    background-color: aquamarine;
-    border-radius: 30px;
-  }
-  .news_title {
-    grid-area: title2;
-    font-size: 48px;
-  }
-  .news_header {
+}
+.news_header {
+  color: darkslateblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  padding: 10px 0px;
+  @media (min-width: 992px) {
     padding: 10px;
   }
-  .img_news {
+}
+.img_news {
+  width: 95%;
+  @media (min-width: 992px) {
     width: 100vh;
   }
-  .news1 {
-    grid-area: news1;
-  }
-  .news2 {
-    grid-area: news2;
-  }
-  .news3 {
-    grid-area: news3;
-  }
-  .news4 {
-    grid-area: news4;
-  }
-  .news5 {
-    grid-area: news5;
-  }
-  .news6 {
-    grid-area: news6;
-  }
-  /* Fin Estilos Noticias */
-  /* Inicio Estilos Pie de Página */
-  .main_footer {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50px auto 500px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .main_footer_nav {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: start;
-    gap: 0 30px;
-  }
-  .img_footer {
-    display: inline;
-    position: relative;
-  }
-  /* Fin Estilos Pie de Página */
 }

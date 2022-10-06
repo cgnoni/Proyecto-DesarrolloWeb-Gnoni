@@ -34,4 +34,7 @@ ol {
   text-align: center;
   line-height: 1.5;
   padding-bottom: 30px;
+  @media (min-width: 992px) {
+    grid-area: title3;
+  }
 }
