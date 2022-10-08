@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
    * Bootstrap  v5.2.2 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
@@ -1340,15 +1339,15 @@ progress {
     --bs-gutter-y: 3rem; } }
 
 .table {
-  --bs-table-color: var(--bs-body-color);
+  --bs-table-color: #9900ff;
   --bs-table-bg: transparent;
   --bs-table-border-color: var(--bs-border-color);
   --bs-table-accent-bg: transparent;
-  --bs-table-striped-color: var(--bs-body-color);
+  --bs-table-striped-color: #9900ff;
   --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
-  --bs-table-active-color: var(--bs-body-color);
+  --bs-table-active-color: #9900ff;
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
-  --bs-table-hover-color: var(--bs-body-color);
+  --bs-table-hover-color: #9900ff;
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
   width: 100%;
   margin-bottom: 1rem;
@@ -8648,50 +8647,46 @@ ol {
   font-size: medium;
   display: flex;
   flex-direction: column; }
+  @media (min-width: 992px) {
+    .main_contacts {
+      display: grid;
+      grid-template-areas: "title3 title3" "form1 paragraph2";
+      grid-template-rows: 0fr;
+      grid-template-columns: 1fr 1fr;
+      gap: 0px;
+      padding: 20px 10px; } }
 
 .contacts_form {
   padding: 20px; }
+  @media (min-width: 992px) {
+    .contacts_form {
+      grid-area: form1;
+      justify-self: center;
+      padding: 0; } }
 
 .contacts_paragraph {
   display: flex;
   flex-direction: column;
   padding: 20px; }
+  @media (min-width: 992px) {
+    .contacts_paragraph {
+      grid-area: paragraph2;
+      align-self: stretch;
+      justify-content: space-evenly;
+      padding: 0; } }
 
 @media (min-width: 992px) {
-  /* Inicio Estilos Página Contactos */
-  .main_contacts {
-    display: grid;
-    grid-template-areas: "title3 title3" "form1 paragraph2";
-    grid-template-rows: 0fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 0px;
-    padding: 20px 10px; }
-  .contacts_form {
-    grid-area: form1;
-    justify-self: center;
-    padding: 0; }
-  .contacts_paragraph {
-    grid-area: paragraph2;
-    align-self: stretch;
-    justify-content: space-evenly;
-    padding: 0; }
   .label_style {
-    padding-right: 10px; }
-  /* Fin Estilos Página Contactos */ }
+    padding-right: 10px; } }
 
 .main_footer {
   background: linear-gradient(0deg, #833ab4 24%, #421dfd 81%, #35bdd490 98%);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  padding-top: 45px; }
   @media (min-width: 992px) {
     .main_footer {
-      width: 100%;
       display: grid;
       grid-template-columns: 50px auto 500px;
       justify-content: space-between;
@@ -8699,13 +8694,9 @@ ol {
 
 .main_footer_nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 25px 10px; }
-  .main_footer_nav a {
-    color: white; }
-    .main_footer_nav a:hover {
-      color: black; }
+  padding: 10px; }
   @media (min-width: 992px) {
     .main_footer_nav {
       display: grid;

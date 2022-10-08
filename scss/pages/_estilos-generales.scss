@@ -27,13 +27,7 @@ ol {
   list-style: none;
 }
 .main_title {
-  color: blue;
-  font-family: "AbrilFatface";
-  font-weight: bold;
-  font-size: 2rem;
-  text-align: center;
-  line-height: 1.5;
-  padding-bottom: 30px;
+  @include comun-title;
   @media (min-width: 992px) {
     grid-area: title3;
   }

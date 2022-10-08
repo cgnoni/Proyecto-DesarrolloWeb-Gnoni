@@ -1,0 +1,38 @@
+@mixin font-nav-footer {
+  font: {
+    family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    size: 1rem;
+    weight: bold;
+  }
+}
+@mixin font-contacts {
+  font: {
+    family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    weight: bold;
+    size: medium;
+  }
+}
+@mixin comun-title {
+  color: blue;
+  font-family: "AbrilFatface";
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+$color-footer: linear-gradient(
+  0deg,
+  rgba(131, 58, 180, 1) 24%,
+  rgba(66, 29, 253, 1) 81%,
+  #35bdd490 98%
+);
+$color-navbar: linear-gradient(
+  180deg,
+  rgba(131, 58, 180, 1) 28%,
+  rgba(66, 29, 253, 1) 83%,
+  rgba(0, 0, 0, 1) 100%
+);
+$table-color: rgb(153, 0, 255);

@@ -1,21 +1,8 @@
 .main_footer {
-  background: linear-gradient(
-    0deg,
-    rgba(131, 58, 180, 1) 24%,
-    rgba(66, 29, 253, 1) 81%,
-    #35bdd490 98%
-  );
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: $color-footer;
+  @include font-nav-footer;
+  padding-top: 45px;
   @media (min-width: 992px) {
-    width: 100%;
     display: grid;
     grid-template-columns: 50px auto 500px;
     justify-content: space-between;
@@ -24,15 +11,9 @@
 }
 .main_footer_nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 25px 10px;
-  a {
-    color: white;
-    &:hover {
-        color: black;
-    }
-  }
+  padding: 10px;
   @media (min-width: 992px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

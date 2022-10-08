@@ -1,14 +1,6 @@
 .nav_style {
-  background: linear-gradient(
-    180deg,
-    rgba(131, 58, 180, 1) 28%,
-    rgba(66, 29, 253, 1) 83%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
+  background: $color-navbar;
+  @include font-nav-footer;
 }
 .dropdown-menu {
   background-color: blueviolet;

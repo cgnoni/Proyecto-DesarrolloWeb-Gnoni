@@ -6,13 +6,13 @@
 .main_table {
   color: white;
   border-collapse: collapse;
-  border: double 5px rgb(153, 0, 255);
+  border: double 5px $table-color;
   font-family: "Monserrat", sans-serif;
   font-size: 25px;
   text-align: justify;
   margin: 0 auto;
   th, td {
-    border: double 2px rgb(153, 0, 255);
+    border: double 2px $table-color;
     padding: 20px;
     text-align: center;
   }
@@ -29,7 +29,7 @@
     tr {
       display: flex;
       flex-direction: column;
-      border: 1px solid rgb(153, 0, 255);
+      border: 1px solid $table-color;
       margin-bottom: 20px;
       padding: 20px;
     }
