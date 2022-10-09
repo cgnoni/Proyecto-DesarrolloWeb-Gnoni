@@ -1,6 +1,6 @@
 .main_contacts {
   background-color: #000000;
-  color: aquamarine;
+  color: $primary;
   @include font-contacts;
   display: flex;
   flex-direction: column;
