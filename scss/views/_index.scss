@@ -1,3 +1,4 @@
+// Inicio Estilos Index
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -61,6 +62,9 @@
     justify-self: center;
   }
 }
+// Fin Estilos Index
+
+// Inicio Estilos "Nosotros"
 .us {
   background-color: #3297a890;
   padding: 20px 15px;
@@ -68,8 +72,8 @@
     display: grid;
     grid-template-areas:
       "title1 title1"
-      "img1 img2"
-      "paragraph paragraph";
+      "paragraph paragraph"
+      "img1 img2";
     grid-template-rows: 0fr;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
@@ -86,11 +90,15 @@
     font-size: 48px;
   }
 }
-.news_title {
-  @extend .us_title;
+.us_paragraph {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
   @media (min-width: 992px) {
-    grid-area: title2;
-    font-size: 48px;
+    grid-area: paragraph;
+    font-size: 35px;
+    padding: 0 85px;
   }
 }
 .img1 {
@@ -113,16 +121,9 @@
     justify-self: center;
   }
 }
-.us_paragraph {
-  font-family: "Montserrat";
-  font-size: 20px;
-  font-weight: 400;
-  text-align: justify;
-  @media (min-width: 992px) {
-    grid-area: paragraph;
-    font-size: 30px;
-  }
-}
+// Fin Estilos "Nosotros"
+
+// Inicio Estilos "Noticias"
 .news {
   background-color: #35bdd490;
   padding: 15px 5px 15px 20px;
@@ -162,6 +163,13 @@
     }
   }
 }
+.news_title {
+  @extend .us_title;
+  @media (min-width: 992px) {
+    grid-area: title2;
+    font-size: 48px;
+  }
+}
 .news_header {
   color: darkslateblue;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -180,3 +188,4 @@
     width: 100vh;
   }
 }
+// Fin Estilos "Noticias"

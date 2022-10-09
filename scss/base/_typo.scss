@@ -22,13 +22,3 @@
   font-size: medium;
   font-weight: bold;
 }
-ul,
-ol {
-  list-style: none;
-}
-.main_title {
-  @include comun-title;
-  @media (min-width: 992px) {
-    grid-area: title3;
-  }
-}

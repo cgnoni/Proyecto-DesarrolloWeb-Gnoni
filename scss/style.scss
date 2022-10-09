@@ -1,16 +1,18 @@
 // Incluya cualquier variable predeterminada aquí
 
-@import "./pages/variables";
+@import "./utilities/variables";
+@import "./utilities/mixins";
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Luego agregue código personalizado adicional aquí
 
-@import "./pages/estilos-generales";
-@import "./pages/navbar";
-@import "./pages/index";
-@import "./pages/historia";
-@import "./pages/eventos";
-@import "./pages/portfolio";
-@import "./pages/contacto";
-@import "./pages/footer";
+@import "./base/estilos-generales";
+@import "./base/typo";
+@import "./layout/navbar";
+@import "./layout/footer";
+@import "./views/index";
+@import "./views/historia";
+@import "./views/eventos";
+@import "./views/portfolio";
+@import "./views/contacto";

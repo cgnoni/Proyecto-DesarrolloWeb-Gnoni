@@ -8386,6 +8386,22 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+ul,
+ol {
+  list-style: none; }
+
+.main_title {
+  color: blue;
+  font-family: "AbrilFatface";
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 30px; }
+  @media (min-width: 992px) {
+    .main_title {
+      grid-area: title3; } }
+
 @font-face {
   font-family: "HarryPotter";
   src: url("fonts/HarryPotter.TTF") format("truetype");
@@ -8410,30 +8426,53 @@ textarea.form-control-lg {
   font-size: medium;
   font-weight: bold; }
 
-ul,
-ol {
-  list-style: none; }
-
-.main_title {
-  color: blue;
-  font-family: "AbrilFatface";
-  font-weight: bold;
-  font-size: 2rem;
-  text-align: center;
-  line-height: 1.5;
-  padding-bottom: 30px; }
-  @media (min-width: 992px) {
-    .main_title {
-      grid-area: title3; } }
-
 .nav_style {
   background: linear-gradient(180deg, #833ab4 28%, #421dfd 83%, black 100%);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold; }
 
+.nav-link {
+  color: white; }
+  .nav-link:hover {
+    color: black; }
+
 .dropdown-menu {
-  background-color: blueviolet; }
+  background-color: blueviolet;
+  --bs-dropdown-min-width: 0;
+  margin: 0 50px; }
+
+.dropdown-item {
+  color: white;
+  font-weight: bold; }
+  .dropdown-item:hover {
+    background-color: blueviolet;
+    color: black; }
+
+.main_footer {
+  background: linear-gradient(0deg, #833ab4 24%, #421dfd 81%, #35bdd490 98%);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 45px; }
+  @media (min-width: 992px) {
+    .main_footer {
+      display: grid;
+      grid-template-columns: 50px auto 500px;
+      justify-content: space-between;
+      align-items: center; } }
+
+.main_footer_nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 10px; }
+  @media (min-width: 992px) {
+    .main_footer_nav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: start;
+      gap: 0 40px; } }
 
 .whatsapp {
   position: fixed;
@@ -8503,7 +8542,7 @@ ol {
   @media (min-width: 992px) {
     .us {
       display: grid;
-      grid-template-areas: "title1 title1" "img1 img2" "paragraph paragraph";
+      grid-template-areas: "title1 title1" "paragraph paragraph" "img1 img2";
       grid-template-rows: 0fr;
       grid-template-columns: 1fr 1fr;
       gap: 25px;
@@ -8519,10 +8558,16 @@ ol {
       grid-area: title1;
       font-size: 48px; } }
 
-@media (min-width: 992px) {
-  .news_title {
-    grid-area: title2;
-    font-size: 48px; } }
+.us_paragraph {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify; }
+  @media (min-width: 992px) {
+    .us_paragraph {
+      grid-area: paragraph;
+      font-size: 35px;
+      padding: 0 85px; } }
 
 .img1 img {
   width: 95%;
@@ -8541,16 +8586,6 @@ ol {
   .img2 {
     grid-area: img2;
     justify-self: center; } }
-
-.us_paragraph {
-  font-family: "Montserrat";
-  font-size: 20px;
-  font-weight: 400;
-  text-align: justify; }
-  @media (min-width: 992px) {
-    .us_paragraph {
-      grid-area: paragraph;
-      font-size: 30px; } }
 
 .news {
   background-color: #35bdd490;
@@ -8579,6 +8614,11 @@ ol {
         grid-area: news5; }
       .news__6 {
         grid-area: news6; } }
+
+@media (min-width: 992px) {
+  .news_title {
+    grid-area: title2;
+    font-size: 48px; } }
 
 .news_header {
   color: darkslateblue;
@@ -8678,28 +8718,3 @@ ol {
 @media (min-width: 992px) {
   .label_style {
     padding-right: 10px; } }
-
-.main_footer {
-  background: linear-gradient(0deg, #833ab4 24%, #421dfd 81%, #35bdd490 98%);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  padding-top: 45px; }
-  @media (min-width: 992px) {
-    .main_footer {
-      display: grid;
-      grid-template-columns: 50px auto 500px;
-      justify-content: space-between;
-      align-items: center; } }
-
-.main_footer_nav {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding: 10px; }
-  @media (min-width: 992px) {
-    .main_footer_nav {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      justify-content: start;
-      gap: 0 40px; } }
