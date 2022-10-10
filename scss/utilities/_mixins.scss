@@ -14,12 +14,26 @@
     size: medium;
   }
 }
+@mixin font-paragraph {
+  font: {
+    family: "Montserrat";
+    size: 20px;
+    weight: 400;
+  }
+  text-align: justify;
+  line-height: 1.5;
+}
 @mixin comun-title {
-  color: blue;
+  color: $info;
   font-family: "AbrilFatface";
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
   line-height: 1.5;
   padding-bottom: 30px;
+}
+@mixin main-background {
+  background-color: black;
+  width: 100%;
+  padding: 30px;
 }

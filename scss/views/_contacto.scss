@@ -1,9 +1,10 @@
 .main_contacts {
-  background-color: #000000;
   color: $primary;
   @include font-contacts;
+  @include main-background;
   display: flex;
   flex-direction: column;
+  padding: 20px;
   @media (min-width: 992px) {
     display: grid;
     grid-template-areas:

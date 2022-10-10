@@ -1,7 +1,5 @@
 .main_events {
-  background-color: black;
-  width: 100%;
-  padding: 30px;
+  @include main-background;
 }
 .main_table {
   color: white;
