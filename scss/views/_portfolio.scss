@@ -1,0 +1,12 @@
+.main_portfolio {
+  @include main-background;
+  div h2 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  color: $primary;
+  &-paragraph {
+    @include font-paragraph;
+    padding-bottom: 20px;
+  }
+}

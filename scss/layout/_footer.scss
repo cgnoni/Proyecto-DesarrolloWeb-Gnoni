@@ -1,12 +1,11 @@
 .main_footer {
   background: $color-footer;
   @include font-nav-footer;
-  padding-top: 45px;
+  padding-top: 40px;
   @media (min-width: 992px) {
     display: grid;
     grid-template-columns: 50px auto 500px;
     justify-content: space-between;
-    align-items: center;
   }
 }
 .main_footer_nav {
@@ -16,8 +15,8 @@
   padding: 10px;
   @media (min-width: 992px) {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: start;
-    gap: 0 40px;
+    gap: 0 140px;
   }
 }

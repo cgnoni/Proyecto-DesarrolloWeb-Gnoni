@@ -8394,7 +8394,7 @@ ol {
   color: rgba(68, 0, 255, 0.767);
   font-family: "AbrilFatface";
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   line-height: 1.5;
   padding-bottom: 30px; }
@@ -8454,13 +8454,12 @@ ol {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
-  padding-top: 45px; }
+  padding-top: 40px; }
   @media (min-width: 992px) {
     .main_footer {
       display: grid;
       grid-template-columns: 50px auto 500px;
-      justify-content: space-between;
-      align-items: center; } }
+      justify-content: space-between; } }
 
 .main_footer_nav {
   display: flex;
@@ -8470,9 +8469,9 @@ ol {
   @media (min-width: 992px) {
     .main_footer_nav {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       justify-content: start;
-      gap: 0 40px; } }
+      gap: 0 140px; } }
 
 .whatsapp {
   position: fixed;
@@ -8704,6 +8703,22 @@ ol {
           .main_table td[data-titulo]::before {
             content: attr(data-titulo);
             width: 130px; } }
+
+.main_portfolio {
+  background-color: black;
+  width: 100%;
+  padding: 30px;
+  color: #40c4ff; }
+  .main_portfolio div h2, .main_portfolio div .h2 {
+    text-align: center;
+    padding: 20px 0; }
+  .main_portfolio-paragraph {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.5;
+    padding-bottom: 20px; }
 
 .main_contacts {
   color: #40c4ff;
