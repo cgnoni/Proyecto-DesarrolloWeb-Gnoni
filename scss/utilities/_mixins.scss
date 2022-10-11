@@ -23,6 +23,27 @@
   text-align: justify;
   line-height: 1.5;
 }
+@mixin font-principaltitle {
+  font: {
+    family: "HarryPotter";
+    style: normal;
+    size: 70px;
+    weight: 700;
+  }
+  text-align: center;
+  line-height: 1.5;
+}
+@mixin header-news {
+  color: darkslateblue;
+  font: {
+    family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    size: 15px;
+    weight: bold;
+    style: italic;
+  }
+  text-align: center;
+  padding: 10px 0px;
+}
 @mixin comun-title {
   color: $info;
   font-family: "AbrilFatface";

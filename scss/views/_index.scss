@@ -42,12 +42,7 @@
   }
 }
 .main_principal_wrapper-title {
-  font-family: "HarryPotter";
-  font-style: normal;
-  font-size: 70px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 1.5;
+  @include font-principaltitle;
   @media (min-width: 992px) {
     font-size: 110px;
   }
@@ -168,13 +163,7 @@
   }
 }
 .news_header {
-  color: darkslateblue;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-  padding: 10px 0px;
+  @include header-news;
   @media (min-width: 992px) {
     padding: 10px;
   }

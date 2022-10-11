@@ -2,11 +2,70 @@
   @include main-background;
   div h2 {
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
   }
   color: $primary;
   &-paragraph {
     @include font-paragraph;
     padding-bottom: 20px;
+  }
+  &-pictures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    div img {
+      width: 100%;
+      padding: 10px;
+    }
+    @media (min-width: 992px) {
+      display: grid;
+      grid-template-areas:
+        "img1 img2"
+        "img3 img4"
+        "img9 img6"
+        "img10 img8"
+        "img5 img7";
+      grid-template-rows: 0fr;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      justify-items: center;
+      &_img1 {
+        grid-area: img1;
+      }
+      &_img2 {
+        grid-area: img2;
+      }
+      &_img3 {
+        grid-area: img3;
+      }
+      &_img4 {
+        grid-area: img4;
+      }
+      &_img5 {
+        grid-area: img5;
+      }
+      &_img6 {
+        grid-area: img6;
+      }
+      &_img7 {
+        grid-area: img7;
+      }
+      &_img8 {
+        grid-area: img8;
+      }
+      &_img9 {
+        grid-area: img9;
+      }
+      &_img10 {
+        grid-area: img10;
+      }
+    }
+  }
+}
+.carousel {
+  padding-bottom: 40px;
+  @media (min-width: 992px) {
+    width: 85%;
+    padding-left: 175px;
   }
 }
