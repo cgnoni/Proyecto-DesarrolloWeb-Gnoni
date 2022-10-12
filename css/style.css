@@ -1339,15 +1339,15 @@ progress {
     --bs-gutter-y: 3rem; } }
 
 .table {
-  --bs-table-color: #9900ff;
+  --bs-table-color: #a125e8;
   --bs-table-bg: transparent;
   --bs-table-border-color: var(--bs-border-color);
   --bs-table-accent-bg: transparent;
-  --bs-table-striped-color: #9900ff;
+  --bs-table-striped-color: #a125e8;
   --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
-  --bs-table-active-color: #9900ff;
+  --bs-table-active-color: #a125e8;
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
-  --bs-table-hover-color: #9900ff;
+  --bs-table-hover-color: #a125e8;
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
   width: 100%;
   margin-bottom: 1rem;
@@ -8427,7 +8427,7 @@ ol {
   font-weight: bold; }
 
 .nav_style {
-  background: linear-gradient(180deg, #833ab4 28%, #421dfd 83%, black 100%);
+  background: rgba(160, 59, 240, 0.7);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold; }
@@ -8450,7 +8450,7 @@ ol {
     color: black; }
 
 .main_footer {
-  background: linear-gradient(0deg, #833ab4 24%, #421dfd 81%, #35bdd490 98%);
+  background: rgba(25, 122, 207, 0.5);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
@@ -8597,7 +8597,8 @@ ol {
       grid-template-rows: 0fr;
       grid-template-columns: 1fr 1fr;
       gap: 25px;
-      padding: 30px 40px; }
+      padding: 30px 40px;
+      justify-items: center; }
       .news div:hover {
         transform: scale(1.1);
         background-color: aquamarine;
@@ -8642,7 +8643,8 @@ ol {
   color: #40c4ff;
   background-color: black;
   width: 100%;
-  padding: 30px; }
+  padding: 30px;
+  height: 100%; }
   .main_history-paragraph {
     font-family: "Montserrat";
     font-size: 20px;
@@ -8666,18 +8668,19 @@ ol {
 .main_events {
   background-color: black;
   width: 100%;
-  padding: 30px; }
+  padding: 30px;
+  height: 100%; }
 
 .main_table {
   color: white;
   border-collapse: collapse;
-  border: double 5px #9900ff;
+  border: double 5px #a125e8;
   font-family: "Monserrat", sans-serif;
   font-size: 25px;
   text-align: justify;
   margin: 0 auto; }
   .main_table th, .main_table td {
-    border: double 2px #9900ff;
+    border: double 2px #a125e8;
     padding: 20px;
     text-align: center; }
   .main_table th {
@@ -8692,7 +8695,7 @@ ol {
       .main_table tr {
         display: flex;
         flex-direction: column;
-        border: 1px solid #9900ff;
+        border: 1px solid #a125e8;
         margin-bottom: 20px;
         padding: 20px; }
       .main_table td {
@@ -8708,6 +8711,7 @@ ol {
   background-color: black;
   width: 100%;
   padding: 30px;
+  height: 100%;
   color: #40c4ff; }
   .main_portfolio div h2, .main_portfolio div .h2 {
     text-align: center;
@@ -8775,6 +8779,7 @@ ol {
   padding: 20px; }
   @media (min-width: 992px) {
     .main_contacts {
+      height: 100%;
       display: grid;
       grid-template-areas: "title3 title3" "form1 paragraph2";
       grid-template-rows: 0fr;

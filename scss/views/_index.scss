@@ -130,6 +130,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 25px;
     padding: 30px 40px;
+    justify-items: center;
     div:hover {
       transform: scale(1.1);
       background-color: aquamarine;

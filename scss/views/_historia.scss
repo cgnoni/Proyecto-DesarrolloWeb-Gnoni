@@ -1,6 +1,7 @@
 .main_history {
   color: $primary;
   @include main-background;
+  height: 100%;
   &-paragraph {
     @include font-paragraph;
     @media (min-width: 992px) {
