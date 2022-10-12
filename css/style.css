@@ -8794,13 +8794,12 @@ ol {
   display: flex;
   flex-direction: column;
   padding: 20px; }
+  .contacts_paragraph a {
+    text-decoration: none; }
   @media (min-width: 992px) {
     .contacts_paragraph {
       grid-area: paragraph2;
       align-self: stretch;
       justify-content: space-evenly;
-      padding: 0; } }
-
-@media (min-width: 992px) {
-  .label_style {
-    padding-right: 10px; } }
+      padding: 0;
+      margin-left: 20px; } }

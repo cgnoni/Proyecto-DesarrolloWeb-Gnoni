@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Magia, Harry Potter, Mar del Plata, Wizard Town, Finite Incantatem, Lady Amata" />
-    <meta name="descrption" content="Página desde donde se podrán contactar con los miembros de la comunidad" />
+    <meta
+      name="keywords"
+      content="Magia, Harry Potter, Mar del Plata, Wizard Town, Finite Incantatem, Lady Amata"
+    />
+    <meta
+      name="descrption"
+      content="Página desde donde se podrán contactar con los miembros de la comunidad"
+    />
     <link rel="shortcut icon" href="./img/fav-icon.png" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Wizard Town</title>
@@ -16,7 +22,7 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">
-            <img src="./img/logo.png" alt="LogoWizard" width="50" height="60">
+            <img src="./img/logo.png" alt="LogoWizard" width="50" height="60" />
           </a>
           <button
             class="navbar-toggler"
@@ -32,7 +38,9 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item pe-4">
-                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item dropdown pe-4">
                 <a
@@ -45,7 +53,9 @@
                   Quienes Somos
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./historia.html">Historia</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./historia.html">Historia</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item pe-4">
@@ -75,38 +85,63 @@
       <div class="main_title">
         <h1>Contacto</h1>
       </div>
-      <form class="contacts_form" action="" id="formulario">
-        <fieldset class="d-flex flex-column">
-          <legend>Formulario de contacto</legend>
-          <div>
-            <label class="label_style" for="name">Nombre y Apellido</label>
-            <input type="text" name="name" />
+      <div class="container">
+        <form class="row g-3 mt-2 me-lg-2 contacts_form">
+          <div class="col-12">
+            <label class="form-label" for="nameInput">Apellido y Nombre</label>
+            <input class="form-control" type="text" id="nameInput" />
           </div>
-          <div>
-            <label class="label_style" for="email">Correo Electronico</label>
-            <input type="email" name="email" />
+          <div class="col-6">
+            <label class="form-label" for="emailInput">Correo Electronico</label>
+            <input class="form-control" type="email" id="emailInput" />
           </div>
-          <div>
-            <label for="message">Dejanos tu mensaje</label>
-            <textarea name="message" cols="30" rows="10"></textarea>
+          <div class="col-6">
+            <label class="form-label" for="telefonoInput">Número de celular</label>
+            <input class="form-control" type="text" id="telefonoInput" />
           </div>
-          <div>
-            <label for="accept">Acepta terminos y condiciones</label>
-            <input type="checkbox" name="accept" value="Si" checked />
+          <div class="col-12">
+            <label class="form-label" for="floatingTextarea">Dejanos tu mensaje</label>
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea">Comentarios</textarea>
           </div>
-          <div>
-            <input type="submit" value="Enviar formulario" />
-            <input type="reset" value="Limpiar formulario" />
+          <div class="col-12">
+            <div class="form-check">
+              <label class="form-check-label" for="checkTerms">Acepta terminos y condiciones</label>
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="checkTerms"
+                value="Si"
+                checked />
+            </div>
           </div>
-        </fieldset>
-      </form>
+          <div class="col-6">
+            <button type="submit" class="btn btn-primary">
+              Enviar formulario
+            </button>
+          </div>
+          <div class="col-6">
+            <button type="reset" class="btn btn-primary">
+              Limpiar formulario
+            </button>
+          </div>
+        </form>
+      </div>
       <div class="contacts_paragraph">
         <p>También pueden enviar un mensaje a las siguientes redes sociales:</p>
-        <a href="https://www.instagram.com/wizardtownmdp/" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/WizardTownmdp/?ref=page_internal"
-        target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/wizardtownmdp/" target="_blank">
+          <img src="./img/icon_instagram.png" alt="Instagram" width="20" />
+          Instagram
+        </a>
+        <a href="https://www.facebook.com/WizardTownmdp/?ref=page_internal" target="_blank">
+          <img src="./img/icon_facebook.png" alt="Facebook" width="25" />Facebook
+        </a>
         <p>O directamente por Whatsapp:</p>
-        <a href="https://api.whatsapp.com/send?phone=542235745502&text=Hola!%20Quer%C3%ADa%20consultar%20sobre" target="_blank">Whatsapp</a>
+        <a href="https://api.whatsapp.com/send?phone=542235745502&text=Hola!%20Quer%C3%ADa%20consultar%20sobre" target="_blank">
+          <img src="./img/icon_whatsapp.png" alt="whatsapp" width="25"/>Whatsapp
+        </a>
       </div>
     </main>
     <!-- Fin Página Principal de Contactos -->
@@ -117,29 +152,25 @@
         <ul class="main_footer_nav">
           <li>
             <a href="https://www.instagram.com/wizardtownmdp/" target="_blank">
-              <img
-              class="img_footer"
-              src="./img/icon_instagram.png"
-              alt="Instagram"
-              width="20"/>
+              <img src="./img/icon_instagram.png" alt="Instagram" width="20" />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/WizardTownmdp/?ref=page_internal" target="_blank">
+            <a
+              href="https://www.facebook.com/WizardTownmdp/?ref=page_internal"
+              target="_blank"
+            >
               <img
-              class="img_footer"
-              src="./img/icon_facebook.png"
-              alt="Facebook"
-              width="25"/>
+                class="img_footer"
+                src="./img/icon_facebook.png"
+                alt="Facebook"
+                width="25"
+              />
             </a>
           </li>
           <li>
             <a href="https://www.tiktok.com/@wizardtownmdp" target="_blank">
-              <img
-              class="img_footer"
-              src="./img/icon_tiktok.png"
-              alt="TikTok"
-              width="30"/>
+              <img src="./img/icon_tiktok.png" alt="TikTok" width="30" />
             </a>
           </li>
         </ul>

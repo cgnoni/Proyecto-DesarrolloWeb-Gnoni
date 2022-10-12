@@ -28,15 +28,14 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+  a {
+    text-decoration: none;
+  }
   @media (min-width: 992px) {
     grid-area: paragraph2;
     align-self: stretch;
     justify-content: space-evenly;
     padding: 0;
-  }
-}
-@media (min-width: 992px) {
-  .label_style {
-    padding-right: 10px;
+    margin-left: 20px;
   }
 }
