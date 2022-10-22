@@ -2,6 +2,9 @@
   &_style {
     background: $color-navbar;
     @include font-nav-footer;
+    @media (min-width: 992px) {
+      position: fixed;
+    }
   }
   &-link {
     color: white;

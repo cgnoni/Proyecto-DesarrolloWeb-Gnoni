@@ -16,7 +16,8 @@
   align-items: center;
   height: 60vh;
   @media (min-width: 992px) {
-    height: 100vh;
+    height: 100%;
+    padding-top: 160px;
   }
 }
 .main_principal_container {

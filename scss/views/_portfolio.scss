@@ -1,6 +1,9 @@
 .main_portfolio {
   @include main-background;
   height: 100%;
+  @media (min-width: 992px) {
+    padding-top: 110px;
+  }
   div h2 {
     text-align: center;
     padding: 30px 0;
