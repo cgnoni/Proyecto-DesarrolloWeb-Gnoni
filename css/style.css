@@ -8454,7 +8454,7 @@ ol {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
-  padding-top: 40px; }
+  padding-top: 10px; }
   @media (min-width: 992px) {
     .main_footer {
       display: grid;
