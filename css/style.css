@@ -8813,6 +8813,8 @@ ol {
   padding: 20px; }
   .contacts_paragraph a {
     text-decoration: none; }
+    .contacts_paragraph a img {
+      margin-right: 20px; }
   @media (min-width: 992px) {
     .contacts_paragraph {
       grid-area: paragraph2;
