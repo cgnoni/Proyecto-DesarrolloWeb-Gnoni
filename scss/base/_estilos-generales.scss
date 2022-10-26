@@ -2,6 +2,16 @@ ul,
 ol {
   list-style: none;
 }
+.whatsapp {
+  position: fixed;
+  bottom: 130px;
+  right: 20px;
+  z-index: 1100;
+  @media (min-width: 992px) {
+    bottom: 80px;
+    right: 40px;
+  }
+}
 .main_title {
   @include comun-title;
   @media (min-width: 992px) {

@@ -37,12 +37,11 @@
   color: white;
   font: {
     family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    size: 20px;
+    // size: 20px;
     weight: bold;
     style: italic;
   }
   text-align: center;
-  padding: 10px 0px;
 }
 @mixin comun-title {
   color: $info;

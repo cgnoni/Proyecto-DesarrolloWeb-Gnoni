@@ -4,6 +4,7 @@
     @include font-nav-footer;
     @media (min-width: 992px) {
       position: fixed;
+      z-index: 1100;
     }
   }
   &-link {

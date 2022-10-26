@@ -4,19 +4,25 @@
   padding-top: 10px;
   @media (min-width: 992px) {
     display: grid;
-    grid-template-columns: 50px auto 500px;
+    grid-template-columns: 60px auto 295px;
     justify-content: space-between;
   }
 }
 .main_footer_nav {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   padding: 10px;
+  & li {
+    text-align: center;
+    margin: 10px;
+    a {
+    text-decoration: none;
+  }
+  }
   @media (min-width: 992px) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: start;
-    gap: 0 140px;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 80px;
   }
 }
