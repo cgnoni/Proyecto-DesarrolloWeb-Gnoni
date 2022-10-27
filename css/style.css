@@ -8846,6 +8846,3 @@ ol {
 
 hr {
   margin: 25px; }
-  @media (min-width: 992px) {
-    hr {
-      display: none; } }
