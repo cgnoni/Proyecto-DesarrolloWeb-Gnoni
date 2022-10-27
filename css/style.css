@@ -8491,6 +8491,11 @@ ol {
       grid-template-columns: repeat(3, 2fr);
       gap: 80px; } }
 
+@media (max-width: 576px) {
+  audio {
+    padding-left: 35px;
+    padding-bottom: 20px; } }
+
 .main_principal {
   background-color: #000000;
   color: rgba(68, 0, 255, 0.911);
@@ -8585,7 +8590,8 @@ ol {
   width: 95%;
   box-shadow: 0px 0px 9px 9px rgba(40, 209, 164, 0.7);
   -webkit-box-shadow: 0px 0px 9px 9px rgba(40, 209, 164, 0.7);
-  -moz-box-shadow: 0px 0px 9px 9px rgba(40, 209, 164, 0.7); }
+  -moz-box-shadow: 0px 0px 9px 9px rgba(40, 209, 164, 0.7);
+  margin-left: 10px; }
   @media (min-width: 992px) {
     .img1, .img2 {
       grid-area: img1;
@@ -8663,17 +8669,23 @@ ol {
     line-height: 1.5; }
     @media (min-width: 992px) {
       .main_history-paragraph {
-        margin: 20px 100px; } }
+        margin: 20px 60px; } }
 
-.img_history {
+.img_history1, .img_history2 {
   text-align: center;
-  padding: 20px; }
-  .img_history img {
-    width: 95%; }
+  padding: 30px;
+  width: 95%; }
   @media (min-width: 992px) {
-    .img_history {
-      width: 70%;
-      padding-left: 400px; } }
+    .img_history1, .img_history2 {
+      width: 80%;
+      padding-left: 190px;
+      margin-left: 70px; } }
+
+@media (min-width: 992px) {
+  .img_history2 {
+    width: 95%;
+    padding: 10px;
+    margin: 20px; } }
 
 .main_events {
   background-color: black;
@@ -8818,6 +8830,12 @@ ol {
     text-decoration: none; }
     .contacts_paragraph a img {
       margin-right: 20px; }
+  @media (max-width: 576px) {
+    .contacts_paragraph p {
+      margin: 0.25rem;
+      text-align: justify; }
+    .contacts_paragraph a {
+      margin: 1rem; } }
   @media (min-width: 992px) {
     .contacts_paragraph {
       grid-area: paragraph2;
@@ -8825,3 +8843,9 @@ ol {
       justify-content: space-evenly;
       padding: 0;
       margin-left: 20px; } }
+
+hr {
+  margin: 25px; }
+  @media (min-width: 992px) {
+    hr {
+      display: none; } }

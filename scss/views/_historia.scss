@@ -8,18 +8,27 @@
   &-paragraph {
     @include font-paragraph;
     @media (min-width: 992px) {
-      margin: 20px 100px;
+      margin: 20px 60px;
     }
   }
 }
-.img_history {
-  text-align: center;
-  padding: 20px;
-  img {
+.img {
+  &_history1 {
+    text-align: center;
+    padding: 30px;
     width: 95%;
+    @media (min-width: 992px) {
+      width: 80%;
+      padding-left: 190px;
+      margin-left: 70px;
+    }
   }
-  @media (min-width: 992px) {
-    width: 70%;
-    padding-left: 400px;
+  &_history2 {
+    @extend .img_history1;
+    @media (min-width: 992px) {
+      width: 95%;
+      padding: 10px;
+      margin: 20px;
+    }
   }
 }

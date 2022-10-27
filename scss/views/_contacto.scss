@@ -34,12 +34,26 @@
       margin-right: 20px;
     }
   }
-
+  @media (max-width: 576px) {
+    p {
+      margin: 0.25rem;
+      text-align: justify;
+    }
+    a {
+      margin: 1rem;
+    }
+  }
   @media (min-width: 992px) {
     grid-area: paragraph2;
     align-self: stretch;
     justify-content: space-evenly;
     padding: 0;
     margin-left: 20px;
+  }
+}
+hr {
+  margin: 25px;
+  @media (min-width: 992px) {
+    display: none;
   }
 }
